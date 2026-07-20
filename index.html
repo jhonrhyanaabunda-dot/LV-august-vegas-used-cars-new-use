@@ -505,25 +505,6 @@
   h2.section-h em { font-style: normal; color: var(--blue); font-weight: 700; }
   h3 { font-family: var(--display); font-weight: 700; font-size: 22px; line-height: 1.25; letter-spacing: -0.015em; margin: 36px 0 16px; color: var(--ink); }
   p { margin: 0 0 22px; line-height: 1.7; }
-  p.lede::first-letter {
-    font-family: var(--display);
-    font-weight: 700;
-    font-size: 4.2em;
-    line-height: 0.85;
-    float: left;
-    padding: 6px 14px 0 0;
-    color: var(--blue);
-  }
-  /* Disable drop cap on ledes that start with a digit or symbol, drop caps need a real letter to work */
-  p.lede.no-cap::first-letter {
-    font-family: inherit;
-    font-weight: inherit;
-    font-size: inherit;
-    line-height: inherit;
-    float: none;
-    padding: 0;
-    color: inherit;
-  }
   p.lede { font-size: 19px; line-height: 1.55; color: var(--ink-soft); margin-bottom: 28px; }
 
   ul.bullets { padding-left: 20px; margin: 0 0 28px; }
@@ -1173,7 +1154,6 @@
     .drives .dist { display: none; }
     h3 { margin: 36px 0 14px; }
     h2.section-h { font-size: clamp(26px, 7vw, 36px); }
-    p.lede::first-letter { font-size: 3.4em; padding: 4px 10px 0 0; }
     /* Large numbers in spec strip can overflow on mobile */
     .spec-strip .num { font-size: 36px; }
   }
@@ -1281,9 +1261,9 @@
 <header class="hero">
   <div class="wrap">
     <div class="eyebrow"><span class="pip"></span> Used &amp; Certified Pre-Owned · Findlay Subaru</div>
-    <h1>Vegas used cars: <em>shop used &amp; certified pre-owned at Findlay Subaru.</em></h1>
-    <p class="deck">Looking for used cars in Las Vegas? Findlay Subaru carries a rotating inventory of used and Subaru Certified Pre-Owned (CPO) vehicles at 6455 Roy Horn Way, off the 215 Beltway in the southwest valley. Every CPO Subaru clears Subaru of America's factory inspection, and the store holds a 4.7-star rating from 3,577 Google reviews.</p>
-    <p class="deck" style="margin-top:-28px; font-size:18px;">Browse the lot online, then come drive, no high-pressure pitch, straight answers. As of June 2026, inventory and current offers change often, so confirm specifics with our team before you visit.</p>
+    <h1>Pre-owned cars in Las Vegas: <em>shop at Findlay Subaru.</em></h1>
+    <p class="deck">Looking for used cars in Las Vegas? Findlay Subaru offers used and Subaru Certified Pre-Owned (CPO) vehicles at 6455 Roy Horn Way, off the 215 Beltway in the southwest valley. Every CPO Subaru clears Subaru of America's factory inspection. We hold a 4.7-star reputation from 3,577 Google reviews.</p>
+    <p class="deck" style="margin-top:-28px; font-size:18px;">Browse the lot online and come do a test drive. Straight answers, no high-pressure pitch.</p>
 
     <div class="hero-meta">
       <div class="item"><div class="lbl">Address</div><div class="val">6455 Roy Horn Way<small>Las Vegas, NV 89118</small></div></div>
@@ -1334,23 +1314,29 @@
       <section class="s" id="cross-shop">
         <div class="section-num"><span>01</span><span>From the sales floor</span></div>
         <h2 class="section-h">Why shop used cars <em>at Findlay Subaru</em>.</h2>
-        <p class="lede">Buying used in Las Vegas should be simple. The goal is to get you into the right vehicle for your budget without the runaround, and to hand you a car that's been gone over by the same technicians who service new Subarus next door.</p>
-        <p>The dealership has earned a 4.7-star rating from 3,577 Google reviews and has been a BBB Accredited Business since June 7, 2016, so the reputation behind the lot is verifiable, not a banner on the building. A few things genuinely separate the used-car experience at a franchised Subaru store from the corner lot:</p>
+        <p class="lede">Buying used in Las Vegas should be simple. The goal is to get you into the right vehicle for your budget without the runaround, and to hand you a car that's been inspected and reconditioned by the same technicians who service new Subarus next door.</p>
+        <p>Findlay Subaru has earned a 4.7-star rating from 3,577 Google reviews and has been a BBB Accredited Business since June 7, 2016. A few things separate the used-car experience at a franchised Subaru store from the corner lot:</p>
 
-        <h3>A factory-trained Subaru store</h3>
-        <p>This isn't a buy-here-pay-here operation. Findlay Subaru is a full franchised Subaru retailer, which means the team that sells and services new Subarus also reconditions and stands behind the pre-owned ones. Our Subaru Express Service certification means routine work gets done in-house, on the same lifts, by Subaru-trained techs.</p>
+        <h3>Factory-trained expertise</h3>
+        <p>We aren't a "buy-here-pay-here" operation. Because we're a fully franchised Subaru retailer, the exact same factory-trained technicians who service brand-new Subarus are the ones inspecting, reconditioning, and standing behind our pre-owned inventory. Thanks to our Subaru Express Service certification, all routine maintenance is handled right here in-house by the pros who know these vehicles inside and out.</p>
 
-        <h3>Award-backed customer satisfaction</h3>
-        <p>Findlay Subaru is a DealerRater Nevada State Dealer of the Year for Consumer Satisfaction across multiple years (2019–2023, 2025, and 2026, 14 DealerRater seals on Cars.com in all) and earned the Subaru Customer Commitment Award for six consecutive years, 2018 through 2023.</p>
+        <h3>Award-winning customer service</h3>
+        <p>We practice real customer service every day. We earned the <strong>DealerRater Nevada State Dealer of the Year</strong>, awarded for Consumer Satisfaction across multiple years (including 2019–2023, 2025, and 2026, totaling 14 DealerRater seals on <a href="https://www.cars.com" rel="noopener" target="_blank">Cars.com</a>). We also received the <strong>Subaru Customer Commitment Award</strong>, earned for six consecutive years (2018–2023).</p>
 
         <h3>Transparency you can check</h3>
         <p>The dealership holds a CarEdge Dealer Transparency Grade A, 91 out of 100, so the way deals are presented is independently rated, not self-reported. Parent company Findlay Automotive Group, founded in 1961, ranked #24 on Automotive News' 2025 Top 150 Dealership Groups.</p>
 
-        <h3>What "reconditioned" means here</h3>
-        <p>When a trade or an auction car lands on our lot, it doesn't go straight to the front line. Last month, a customer traded in a 2021 Outback, and our service team inspected it against the full used-car checklist before it ever got a price sticker. Our technicians verified brake pad thickness, scanned for stored diagnostic codes, and inspected tire tread depth across all four corners. They found two rear tires that had dropped below 4/32", under the 6/32" we like to see on anything leaving the lot, and replaced them and verified the cooling system before the car went up for sale. Cars that need more than we're comfortable certifying get sent to wholesale auction instead of the front line. We'd rather move a car along than put our name on a problem.</p>
+        <h3>What "reconditioned" means to us</h3>
+        <p>When a trade-in or auction vehicle arrives at Findlay Subaru, it doesn't just get a quick wash and a price tag. It goes through a rigorous inspection process.</p>
+
+        <p><strong>For example:</strong> Just last month, a customer traded in a 2021 Outback. Before it ever hit the lot, our service team went to work. They verified the brake pad thickness, ran full diagnostic scans, and measured the tire tread depth at all four corners.</p>
+
+        <p>They noticed two rear tires had dropped below 4/32" of tread. While other lots might let that slide, our standard is 6/32" or thicker. We replaced those tires, thoroughly checked the cooling system, and <em>then</em> put it up for sale. If a car needs more work than we are comfortable certifying, we don't sell it to you. We send it straight to a wholesale auction. We'd rather pass on a sale than put our name behind a problem.</p>
+
+        <p>That level of care is something a spreadsheet of VINs online can never show you. It's why we always encourage our shoppers to ask us exactly what work was done to a vehicle before they sign on the dotted line.</p>
 
         <blockquote class="pull">
-          That's the part of "used" a spreadsheet of VINs can't show you, and it's why we tell shoppers to ask exactly what was done to any specific car before they sign.
+          If you're ready for a simpler, safer way to buy used, come drop by and say hello. We'll find the right keys for you.
         </blockquote>
 
         <p style="font-size:12px; color:var(--muted); letter-spacing:0.02em; line-height:1.6; border-top:1px solid var(--rule-soft); padding-top:18px; margin-top:24px;"><strong style="color:var(--ink-soft); letter-spacing:0.1em; text-transform:uppercase; font-size:10px;">Note ·</strong> As of June 2026, inventory and current offers change often, so confirm specifics with our team before you visit. Browse the live used inventory at <a href="https://www.subaruoflasvegas.com/" rel="noopener" target="_blank">subaruoflasvegas.com</a>. You can continually cross-reference and verify direct contact endpoints or staff directories by using the official <a href="https://www.subaruoflasvegas.com/contact-us/" rel="noopener" target="_blank">Subaru of Las Vegas Contact Portal</a>.</p>
@@ -1360,7 +1346,7 @@
       <section class="s" id="outback-lineup">
         <div class="section-num"><span>02</span><span>Two lanes</span></div>
         <h2 class="section-h">Used vs Subaru <em>Certified Pre-Owned</em>.</h2>
-        <p class="lede">Both options live on the same lot, but they're built for different buyers. Pick the wrong lane and you either overpay for coverage you didn't need or skip protection you'd have wanted.</p>
+        <p class="lede">Both options live on the same lot, but they're built for different buyers. If you aren't careful, you either overpay for coverage you didn't need or skip protection you'd have wanted.</p>
 
         <div class="trims">
           <article class="trim">
@@ -1385,8 +1371,20 @@
           </article>
         </div>
 
-        <h3>What each path is, plain English</h3>
-        <p>The <strong>used inventory</strong> spans makes, models, years, and price points, pre-owned Subarus and trade-ins from other brands alike. This is the path for the widest selection and the lowest entry price. <strong>Subaru CPO</strong> is a low-mileage, late-model Subaru that has passed Subaru of America's 152-point factory inspection. Per Subaru of America's published CPO program (subaru.com), eligible vehicles are typically within the most recent model years with under 80,000 miles, and certification adds a 7-year/100,000-mile powertrain limited warranty plus a 24-month/unlimited-mileage extension of the factory bumper-to-bumper terms. Because it's factory certified, that warranty travels with the car to any Subaru dealer in the country, not just this one.</p>
+        <h3>Two ways to save</h3>
+        <p>When you're browsing our lot, you'll generally see our pre-owned vehicles split into two categories. Here is exactly what those paths mean for you, without any confusing jargon:</p>
+
+        <h4 style="font-family:var(--display); font-weight:700; font-size:18px; letter-spacing:-0.01em; color:var(--ink); margin:28px 0 12px;">Standard used</h4>
+        <p><strong>What this is:</strong> a wide selection of pre-owned Subarus alongside great trade-ins from other brands (like Toyota, Ford, or Honda) across various years and mileages. The benefit of this path is the <strong>widest variety</strong> and the <strong>lowest starting prices</strong>. If you need a reliable budget-friendly commuter, a first car for a teenager, or a solid secondary family vehicle, this is where you'll find it. And remember, every single one still goes through our strict in-house safety inspection before getting a price tag.</p>
+
+        <h4 style="font-family:var(--display); font-weight:700; font-size:18px; letter-spacing:-0.01em; color:var(--ink); margin:28px 0 12px;">Subaru Certified Pre-Owned (CPO)</h4>
+        <p>This would mean a cream-of-the-crop, late-model, low-mileage Subaru that has passed a rigorous <strong>152-point factory inspection</strong> mandated by Subaru of America. To even qualify for the program, the vehicle must have under 80,000 miles and be from recent model years. It's the closest thing you can get to a brand-new car, but with a used-car price tag. Because it earns that official factory stamp of approval, it comes loaded with major extra perks:</p>
+        <ul class="bullets">
+          <li>A <strong>7-year/100,000-mile</strong> powertrain limited warranty.</li>
+          <li>A <strong>24-month/unlimited-mileage</strong> extension on the factory bumper-to-bumper terms.</li>
+          <li><strong>Nationwide coverage:</strong> Because this warranty is backed by Subaru of America, it travels with the car. You can get it serviced at any Subaru dealership in the country, not just here at Findlay.</li>
+        </ul>
+        <p>Choose <strong>Standard Used</strong> for the best upfront savings and variety. Choose <strong>Subaru CPO</strong> if you want the highest level of long-term peace of mind and factory warranty protection.</p>
 
         <div class="spec-strip">
           <div class="item"><div class="num">152<small> pt</small></div><div class="lbl">Subaru factory CPO inspection</div></div>
@@ -1400,7 +1398,7 @@
       <section class="s" id="verdict">
         <div class="section-num"><span>03</span><span>Side by side</span></div>
         <h2 class="section-h">Used vs Subaru CPO, <em>line by line</em>.</h2>
-        <p class="lede">Compare the two lanes across the things that actually change the deal, then read the honest take on when CPO is <em>not</em> worth it.</p>
+        <p class="lede">Compare the two options across important factors, then see when we'd advise <em>against</em> CPO.</p>
 
         <!-- Desktop: comparison table -->
         <div class="cross-table">
@@ -1485,9 +1483,9 @@
           </article>
         </div>
 
-        <h3>The honest take: when CPO is NOT worth it</h3>
-        <p>Here's what most buyers get wrong. CPO is excellent, but it isn't automatically the right call for everyone. If you're shopping a Subaru that's six or seven model years old, or one with high miles, it won't qualify for CPO anyway, so chasing the badge narrows your options for no reason. And if you tend to keep a car only two or three years and you're a low-mileage driver, you may never use enough of the extended powertrain coverage to justify the premium over a comparable clean-history used Subaru.</p>
-        <p>We'd steer a short-term, low-mile buyer toward a well-reconditioned non-CPO car and suggest putting the savings toward a larger down payment. CPO earns its keep for the buyer planning to drive the same Subaru well past 100,000 miles, that's where the 7-year/100,000-mile powertrain warranty stops being a sticker and starts being real money.</p>
+        <h3>When CPO is NOT worth it</h3>
+        <p>CPO is excellent, but it isn't automatically the right call for everyone. If you're shopping a Subaru that's six or seven model years old, or one with high miles, it won't qualify for CPO anyway, so chasing the badge narrows your options for no reason. And if you tend to keep a car only two or three years and you're a low-mileage driver, you may never use enough of the extended powertrain coverage to justify the premium over a comparable clean-history used Subaru.</p>
+        <p>We'd steer a short-term, low-mile buyer toward a well-reconditioned non-CPO car and suggest putting the savings toward a larger down payment. CPO is worth it for the buyer planning to drive the same Subaru well past 100,000 miles. That's where the 7-year/100,000-mile powertrain warranty offers real value.</p>
       </section>
 
       <!-- §04 Subaru models on the used lot -->
@@ -1497,14 +1495,14 @@
         <p class="lede">Because this is a Subaru store, the pre-owned Subaru rotation runs deeper here than at a non-franchise lot. Symmetrical all-wheel drive is standard across the gas lineup, which matters more than Vegas shoppers expect on Mount Charleston, Lee Canyon, and Brian Head winter runs.</p>
 
         <ul class="bullets">
-          <li><strong>Outback.</strong> The valley's default do-everything wagon. Higher ground clearance than a sedan, AWD standard, and a cabin that swallows ski gear and dog crates alike. On used examples, check that all scheduled CVT services were performed; we verify this in reconditioning, but ask to see the history on any car.</li>
+          <li><strong>Outback.</strong> The valley's default do-everything wagon. Higher ground clearance than a sedan, AWD standard, and a cabin that swallows ski gear and dog crates alike. On used examples, check that all scheduled CVT services were performed. We verify this in reconditioning, but still, ask to see the history on any car.</li>
           <li><strong>Forester.</strong> Boxy, upright, easy outward visibility, a favorite of valley parents and anyone who hauls bikes. The high seating position and big glass make it forgiving in I-15 traffic.</li>
-          <li><strong>Crosstrek.</strong> The compact crossover for tighter budgets and tighter parking. Strong fuel economy for an AWD vehicle; check EPA estimates by exact model year and trim at the official EPA database before you assume the numbers.</li>
-          <li><strong>Ascent.</strong> Three rows when you need them. Used Ascents move quickly with Summerlin and Henderson families, bring a short list, not a single VIN.</li>
+          <li><strong>Crosstrek.</strong> The compact crossover for tighter budgets and tighter parking. Strong fuel economy for an AWD vehicle (check EPA estimates by exact model year and trim at the official EPA database).</li>
+          <li><strong>Ascent.</strong> Three rows when you need them. Note that used Ascents move quickly with Summerlin and Henderson families.</li>
           <li><strong>Legacy and Impreza.</strong> The sedan and hatchback value plays for commuters who still want all-wheel drive without the crossover ride height.</li>
         </ul>
 
-        <p>A note on EVs, because it comes up: the Subaru Solterra is built by Toyota, not Subaru, so its ownership and parts story differs from the gas lineup. Ask us directly if you're cross-shopping electric, and we'll give you the straight version rather than a brochure line.</p>
+        <p>The Subaru Solterra is built by Toyota, not Subaru, so its ownership and parts story differs from the gas lineup. Ask us directly if you're cross-shopping electric, and we'll give you an honest ownership picture.</p>
 
         <blockquote class="pull">
           Before you fall for a specific used car, two free habits we recommend to every shopper: run the VIN, and read the crash-test scores.
@@ -1537,7 +1535,7 @@
       <section class="s" id="awd-systems">
         <div class="section-num"><span>05</span><span>How to shop</span></div>
         <h2 class="section-h">How to shop our <em>Vegas used car inventory</em>.</h2>
-        <p class="lede">Four steps that make the whole thing faster and more honest, start online, narrow to your budget, line up your trade, then come drive on real roads.</p>
+        <p class="lede">Four steps: start online, narrow to your budget, line up your trade, then come do a test drive.</p>
 
         <div class="trims">
           <article class="trim">
